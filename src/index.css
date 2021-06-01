@@ -1,0 +1,44 @@
+html {
+  background-color: black;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+  height: 60px;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.img-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
